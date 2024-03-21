@@ -1,0 +1,30 @@
+<div class="container-fluid text-center">
+  <h1>Liste des Etudiants</h1>
+  <img class="my-5" src="../../../assets/etudiants.jpg" alt="" />
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Rue</th>
+        <th>Code Postal</th>
+        <th>Ville</th>
+        <th>Email</th>
+        <th>Genre</th>
+        <th>Age</th>
+        <th>Id Candidat</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let etudiant of etudiants">
+      <td>{{ etudiant._nom | uppercase }}</td>
+      <td>{{ etudiant._prenoms | titlecase }}</td>
+      <td>{{ etudiant._rue }}</td>
+      <td>{{ etudiant._cp }}</td>
+      <td>{{ etudiant._ville }}</td>
+      <td>{{ etudiant._courriel }}</td>
+      <td>{{ etudiant._genre }}</td>
+      <td>{{ etudiant._age }}</td>
+      <td>{{ etudiant._idCand }}</td>
+    </tr>
+  </table>
+</div>

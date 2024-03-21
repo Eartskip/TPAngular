@@ -1,0 +1,16 @@
+<div class="container-fluid text-center mt-5">
+  <h1>Liste des Spécialités</h1>
+  <img class="my-5" src="../../../assets/specialite.jpg" alt="" />
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Libelle</th>
+        <th>Id spécialités</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let specialite of specialites">
+      <td>{{ specialite._libelle }}</td>
+      <td>{{ specialite._idSpec }}</td>
+    </tr>
+  </table>
+</div>
